@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<site id="1" code="VTBB">
+  <tx>
+    <remoteIP>155.12.23.255</remoteIP>
+    <remotePort>9095</remotePort>
+  </tx>
+</site>

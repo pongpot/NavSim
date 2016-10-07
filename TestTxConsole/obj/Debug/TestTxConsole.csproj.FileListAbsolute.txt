@@ -1,0 +1,7 @@
+C:\Users\Pavine\workspace\VS2015\NavSim\TestTxConsole\bin\Debug\TestTxConsole.exe.config
+C:\Users\Pavine\workspace\VS2015\NavSim\TestTxConsole\bin\Debug\TestTxConsole.exe
+C:\Users\Pavine\workspace\VS2015\NavSim\TestTxConsole\bin\Debug\TestTxConsole.pdb
+C:\Users\Pavine\workspace\VS2015\NavSim\TestTxConsole\bin\Debug\MSDIS.Transmitters.dll
+C:\Users\Pavine\workspace\VS2015\NavSim\TestTxConsole\obj\Debug\TestTxConsole.exe
+C:\Users\Pavine\workspace\VS2015\NavSim\TestTxConsole\obj\Debug\TestTxConsole.pdb
+C:\Users\Pavine\workspace\VS2015\NavSim\TestTxConsole\bin\Debug\Conf\site.xml

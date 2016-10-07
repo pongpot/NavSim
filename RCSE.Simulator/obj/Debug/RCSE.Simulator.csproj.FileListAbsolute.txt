@@ -1,0 +1,9 @@
+C:\Users\Pavine\workspace\VS2015\NavSim\RCSE.Simulator\bin\Debug\RCSE.Simulator.exe.config
+C:\Users\Pavine\workspace\VS2015\NavSim\RCSE.Simulator\bin\Debug\RCSE.Simulator.exe
+C:\Users\Pavine\workspace\VS2015\NavSim\RCSE.Simulator\bin\Debug\RCSE.Simulator.pdb
+C:\Users\Pavine\workspace\VS2015\NavSim\RCSE.Simulator\obj\Debug\RCSE.Simulator.csprojResolveAssemblyReference.cache
+C:\Users\Pavine\workspace\VS2015\NavSim\RCSE.Simulator\obj\Debug\RCSE.Simulator.MainForm.resources
+C:\Users\Pavine\workspace\VS2015\NavSim\RCSE.Simulator\obj\Debug\RCSE.Simulator.Properties.Resources.resources
+C:\Users\Pavine\workspace\VS2015\NavSim\RCSE.Simulator\obj\Debug\RCSE.Simulator.csproj.GenerateResource.Cache
+C:\Users\Pavine\workspace\VS2015\NavSim\RCSE.Simulator\obj\Debug\RCSE.Simulator.exe
+C:\Users\Pavine\workspace\VS2015\NavSim\RCSE.Simulator\obj\Debug\RCSE.Simulator.pdb
