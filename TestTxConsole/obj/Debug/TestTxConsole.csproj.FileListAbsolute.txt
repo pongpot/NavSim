@@ -5,3 +5,11 @@ C:\Users\Pavine\workspace\VS2015\NavSim\TestTxConsole\bin\Debug\MSDIS.Transmitte
 C:\Users\Pavine\workspace\VS2015\NavSim\TestTxConsole\obj\Debug\TestTxConsole.exe
 C:\Users\Pavine\workspace\VS2015\NavSim\TestTxConsole\obj\Debug\TestTxConsole.pdb
 C:\Users\Pavine\workspace\VS2015\NavSim\TestTxConsole\bin\Debug\Conf\site.xml
+C:\Users\pongpot\Source\Repos\NavSim\TestTxConsole\bin\Debug\Conf\site.xml
+C:\Users\pongpot\Source\Repos\NavSim\TestTxConsole\bin\Debug\TestTxConsole.exe.config
+C:\Users\pongpot\Source\Repos\NavSim\TestTxConsole\bin\Debug\TestTxConsole.exe
+C:\Users\pongpot\Source\Repos\NavSim\TestTxConsole\bin\Debug\TestTxConsole.pdb
+C:\Users\pongpot\Source\Repos\NavSim\TestTxConsole\bin\Debug\MSDIS.Transmitters.dll
+C:\Users\pongpot\Source\Repos\NavSim\TestTxConsole\obj\Debug\TestTxConsole.csprojResolveAssemblyReference.cache
+C:\Users\pongpot\Source\Repos\NavSim\TestTxConsole\obj\Debug\TestTxConsole.exe
+C:\Users\pongpot\Source\Repos\NavSim\TestTxConsole\obj\Debug\TestTxConsole.pdb

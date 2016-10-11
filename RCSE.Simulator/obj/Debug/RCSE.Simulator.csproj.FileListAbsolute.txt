@@ -7,3 +7,12 @@ C:\Users\Pavine\workspace\VS2015\NavSim\RCSE.Simulator\obj\Debug\RCSE.Simulator.
 C:\Users\Pavine\workspace\VS2015\NavSim\RCSE.Simulator\obj\Debug\RCSE.Simulator.csproj.GenerateResource.Cache
 C:\Users\Pavine\workspace\VS2015\NavSim\RCSE.Simulator\obj\Debug\RCSE.Simulator.exe
 C:\Users\Pavine\workspace\VS2015\NavSim\RCSE.Simulator\obj\Debug\RCSE.Simulator.pdb
+C:\Users\pongpot\Source\Repos\NavSim\RCSE.Simulator\bin\Debug\RCSE.Simulator.exe.config
+C:\Users\pongpot\Source\Repos\NavSim\RCSE.Simulator\obj\Debug\RCSE.Simulator.exe
+C:\Users\pongpot\Source\Repos\NavSim\RCSE.Simulator\obj\Debug\RCSE.Simulator.pdb
+C:\Users\pongpot\Source\Repos\NavSim\RCSE.Simulator\bin\Debug\RCSE.Simulator.exe
+C:\Users\pongpot\Source\Repos\NavSim\RCSE.Simulator\bin\Debug\RCSE.Simulator.pdb
+C:\Users\pongpot\Source\Repos\NavSim\RCSE.Simulator\obj\Debug\RCSE.Simulator.csprojResolveAssemblyReference.cache
+C:\Users\pongpot\Source\Repos\NavSim\RCSE.Simulator\obj\Debug\RCSE.Simulator.MainForm.resources
+C:\Users\pongpot\Source\Repos\NavSim\RCSE.Simulator\obj\Debug\RCSE.Simulator.Properties.Resources.resources
+C:\Users\pongpot\Source\Repos\NavSim\RCSE.Simulator\obj\Debug\RCSE.Simulator.csproj.GenerateResource.Cache
