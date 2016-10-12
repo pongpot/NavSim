@@ -16,5 +16,10 @@ namespace RCSE.Simulator
         {
             InitializeComponent();
         }
+
+        private void MainForm_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
