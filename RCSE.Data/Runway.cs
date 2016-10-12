@@ -17,15 +17,15 @@ namespace RCSE.Data
         };
 
         public string Name { get; set; }
-        public bool RunwayEnable { get; set; }
+        public bool Enable { get; set; }
         public bool Buzzer { get; set; }
         public int RunwayNum { get; set; }
         public CategoryType Category { get; set; }
         public Runway() { }
-        public Runway(string name, bool runwayenable, bool buzzer, int runwaynum, CategoryType category)
+        public Runway(string name, bool enable, bool buzzer, int runwaynum, CategoryType category)
         {
             Name = name;
-            RunwayEnable = runwayenable;
+            Enable = enable;
             Buzzer = buzzer;
             RunwayNum = runwaynum;
             Category = category;

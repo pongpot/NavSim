@@ -6,56 +6,56 @@
   </tx>
   <airport>
     <runway>
-      <one>
-        <bearing>000</bearing>
+      <rny1>
+        <name></name>
         <category>1</category>
         <enable>ON</enable>
-      </one>
-      <two>
-        <bearing>000</bearing>
+      </rny1>
+      <rny2>
+        <name></name>
         <category>1</category>
         <enable>ON</enable>
-      </two>
+      </rny2>
     </runway>
     <navaids>
       <rpu1>
         <name>gp</name>
-        <bearing></bearing>
+        <runwaynum></runwaynum>
         <enable></enable>
       </rpu1>
       <rpu2>
         <name>gp</name>
-        <bearing></bearing>
+        <runwaynum></runwaynum>
         <enable></enable>
       </rpu2>
       <rpu3>
         <name>gp</name>
-        <bearing></bearing>
+        <runwaynum></runwaynum>
         <enable></enable>
       </rpu3>
       <rpu4>
         <name>gp</name>
-        <bearing></bearing>
+        <runwaynum></runwaynum>
         <enable></enable>
       </rpu4>
       <rpu5>
         <name>gp</name>
-        <bearing></bearing>
+        <runwaynum></runwaynum>
         <enable></enable>
       </rpu5>
       <rpu6>
         <name>gp</name>
-        <bearing></bearing>
+        <runwaynum></runwaynum>
         <enable></enable>
       </rpu6>
       <rpu7>
         <name>gp</name>
-        <bearing></bearing>
+        <runwaynum></runwaynum>
         <enable></enable>
       </rpu7>
       <rpu8>
         <name>gp</name>
-        <bearing></bearing>
+        <runwaynum></runwaynum>
         <enable></enable>
       </rpu8>
     </navaids>

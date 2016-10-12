@@ -10,13 +10,11 @@ namespace RCSE.Data
     {
         public List<Runway> Runway { get; set; }
         public List<Navaid> Navaid { get; set; }
-        public bool Buzzer { get; set; }
         public Airport() { }
-        public Airport(List<Runway> runway, List<Navaid> navaid, bool buzzer)
+        public Airport(List<Runway> runway, List<Navaid> navaid)
         {
             Runway = new List<Runway>(runway);
             Navaid = new List<Navaid>(navaid);
-            Buzzer = buzzer;
         }
     }
 }
