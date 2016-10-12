@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using RCSE.Data;
 using System.Xml.Linq;
 
 namespace RCSE.Simulator
@@ -28,6 +29,7 @@ namespace RCSE.Simulator
             get { return _tx; }
             private set { _tx = value; }
         }
+        public Airport Airport { get; set; }
         public Configuration(string cFile)
         {
             XDocument rDoc = XDocument.Load(cFile);
@@ -38,6 +40,13 @@ namespace RCSE.Simulator
             _tx = new TxC();
             _tx.RemoteIP = siteElem.Element("tx").Element("remoteIP").Value;
             _tx.RemotePort = siteElem.Element("tx").Element("remotePort").Value;
+
+            Airport = new Airport();
+
+            Navaid rpu1 = new Navaid();
+            rpu1.Name = siteElem.Element("airport").Element("navaids").Element("rpu1").Element("name").Value;
+            String Runway = siteElem.Element("airport").Element("navaids").Element("rpu1").Element("name").Value;
+            rpu1.
         }
     }
     public class TxC

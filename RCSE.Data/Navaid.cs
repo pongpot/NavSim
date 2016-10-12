@@ -24,17 +24,19 @@ namespace RCSE.Data
         public StatusType Status { get; set; }
         public bool Control { get; set; }
         public bool Buzzer { get; set; }
-        public int Runway { get; set; }
+        public bool Enable { get; set; }
+        public int RunwayNum { get; set; }
         public int Rpunum { get; set; }
         public Navaid() { }
-        public Navaid(string name, StatusType status, bool control, int runway, int rpunum, bool buzzer)
+        public Navaid(string name, StatusType status, bool control, bool buzzer, bool enable, int runwaynum, int rpunum)
         {
             Name = name;
             Status = status;
             Control = control;
-            Runway = runway;
-            Rpunum = rpunum;
             Buzzer = buzzer;
+            Enable = enable;
+            RunwayNum = runwaynum;
+            Rpunum = rpunum;
         }
     }
 }
