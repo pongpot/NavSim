@@ -81,10 +81,9 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\RCSE.Data\RCSE.Data.csproj">
-      <Project>{df6712f4-88e4-4238-b7d0-1234363083e0}</Project>
-      <Name>RCSE.Data</Name>
-    </ProjectReference>
+    <Content Include="Conf\site.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

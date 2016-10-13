@@ -96,9 +96,8 @@ namespace RCSE.Simulator
             _airport.Navaid.Add(XmlNavaidToData("rpu7", siteElem));
             _airport.Navaid.Add(XmlNavaidToData("rpu8", siteElem));
 
-            Runway _runway = new Runway();
-
-
+            _airport.Runway.Add(XmlRunwayToData("rny1", siteElem));
+            _airport.Runway.Add(XmlRunwayToData("rny2", siteElem));
         }
     }
     public class TxC
