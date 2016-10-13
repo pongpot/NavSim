@@ -16,3 +16,6 @@ C:\Users\pongpot\Source\Repos\NavSim\RCSE.Simulator\obj\Debug\RCSE.Simulator.Mai
 C:\Users\pongpot\Source\Repos\NavSim\RCSE.Simulator\obj\Debug\RCSE.Simulator.Properties.Resources.resources
 C:\Users\pongpot\Source\Repos\NavSim\RCSE.Simulator\obj\Debug\RCSE.Simulator.csproj.GenerateResource.Cache
 C:\Users\pongpot\Source\Repos\NavSim\RCSE.Simulator\obj\Debug\RCSE.Simulator.csprojResolveAssemblyReference.cache
+C:\Users\pongpot\Source\Repos\NavSim\RCSE.Simulator\bin\Debug\Conf\site.xml
+C:\Users\pongpot\Source\Repos\NavSim\RCSE.Simulator\bin\Debug\RCSE.Data.dll
+C:\Users\pongpot\Source\Repos\NavSim\RCSE.Simulator\bin\Debug\RCSE.Data.pdb

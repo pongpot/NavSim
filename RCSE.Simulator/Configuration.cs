@@ -13,6 +13,7 @@ namespace RCSE.Simulator
         private int _id;
         private string _code;
         private TxC _tx;
+        private Airport _airport;
 
         public int Id
         {
@@ -29,30 +30,36 @@ namespace RCSE.Simulator
             get { return _tx; }
             private set { _tx = value; }
         }
-        public Airport Airport { get; set; }
+        public Airport Airport {
+            get { return _airport; }
+            private set { _airport = value; }
+        }
         private Navaid XmlNavaidToData (string rpuname, XElement navaidElem)
         {
             String _buf;
-            Navaid rpu = new Navaid();
+            Navaid _rpu = new Navaid();
 
-            rpu.Name = navaidElem.Element("airport").Element("navaids").Element(rpuname).Element("name").Value;
+            _rpu.Name = navaidElem.Element("airport").Element("navaids").Element(rpuname).Element("name").Value;
 
             _buf = navaidElem.Element("airport").Element("navaids").Element(rpuname).Element("runwaynum").Value;
-            rpu.RunwayNum = Int32.Parse(_buf);
+            if (_buf.Length != 0)
+            {
+                _rpu.RunwayNum = Int32.Parse(_buf);
+            }
 
             _buf = navaidElem.Element("airport").Element("navaids").Element(rpuname).Element("enable").Value;
             if (string.Compare(_buf.ToLower(), "on") == 0)
             {
-                rpu.Enable = true;
+                _rpu.Enable = true;
             }
             else
             {
-                rpu.Enable = false;
+                _rpu.Enable = false;
             }
 
-            rpu.Rpunum = (int)Char.GetNumericValue(rpuname[rpuname.Length - 1]);
+            _rpu.Rpunum = (int)Char.GetNumericValue(rpuname[rpuname.Length - 1]);
 
-            return rpu;
+            return _rpu;
         }
         private Runway XmlRunwayToData(string rnyname, XElement runwayElem)
         {
@@ -60,6 +67,23 @@ namespace RCSE.Simulator
             Runway _runway = new Runway();
 
             _runway.Name = runwayElem.Element("airport").Element("runway").Element(rnyname).Element("name").Value;
+
+            _buf = runwayElem.Element("airport").Element("runway").Element(rnyname).Element("category").Value;
+            if (_buf.Length != 0)
+            {
+                if (Int32.Parse(_buf) == 1 || Int32.Parse(_buf) == 2)
+                {
+                    _runway.Category = Runway.CategoryType.Cat1_2;
+                }
+                else if (Int32.Parse(_buf) == 3)
+                {
+                    _runway.Category = Runway.CategoryType.Cat3;
+                }
+                else
+                {
+                    _runway.Category = Runway.CategoryType.NoRunway;
+                }
+            }
 
             _buf = runwayElem.Element("airport").Element("runway").Element(rnyname).Element("enable").Value;
             if (string.Compare(_buf.ToLower(), "on") == 0)
@@ -86,7 +110,8 @@ namespace RCSE.Simulator
             _tx.RemoteIP = siteElem.Element("tx").Element("remoteIP").Value;
             _tx.RemotePort = siteElem.Element("tx").Element("remotePort").Value;
 
-            Airport _airport = new Airport();
+            _airport = new Airport();
+
             _airport.Navaid.Add(XmlNavaidToData("rpu1", siteElem));
             _airport.Navaid.Add(XmlNavaidToData("rpu2", siteElem));
             _airport.Navaid.Add(XmlNavaidToData("rpu3", siteElem));

@@ -19,20 +19,37 @@ namespace RCSE.Data
             Datacom,
             Datacomflash
         };
-
+        public enum MaintType
+        {
+            Off,
+            Maintenance,
+            MainOff,
+            Maintenanceflash
+        };
+        public enum DataComType
+        {
+            Off,
+            Datacom,
+            DataComOff,
+            Datacomflash
+        };
         public string Name { get; set; }
         public StatusType Status { get; set; }
-        public bool Control { get; set; }
+        public MaintType Maint { get; set; }
+        public DataComType DataCom { get; set; }
+        public bool PcControl { get; set; }
         public bool Buzzer { get; set; }
         public bool Enable { get; set; }
         public int RunwayNum { get; set; }
         public int Rpunum { get; set; }
         public Navaid() { }
-        public Navaid(string name, StatusType status, bool control, bool buzzer, bool enable, int runwaynum, int rpunum)
+        public Navaid(string name, StatusType status, MaintType maint, DataComType datacom, bool pccontrol, bool buzzer, bool enable, int runwaynum, int rpunum)
         {
             Name = name;
             Status = status;
-            Control = control;
+            Maint = maint;
+            DataCom = datacom;
+            PcControl = pccontrol;
             Buzzer = buzzer;
             Enable = enable;
             RunwayNum = runwaynum;

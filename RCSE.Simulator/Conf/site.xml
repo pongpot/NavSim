@@ -7,56 +7,56 @@
   <airport>
     <runway>
       <rny1>
-        <name></name>
+        <name>21-Right</name>
         <category>1</category>
         <enable>ON</enable>
       </rny1>
       <rny2>
-        <name></name>
+        <name>03-Left</name>
         <category>1</category>
         <enable>ON</enable>
       </rny2>
     </runway>
     <navaids>
       <rpu1>
-        <name>gp</name>
-        <runwaynum></runwaynum>
-        <enable></enable>
+        <name>LLZ-21R</name>
+        <runwaynum>1</runwaynum>
+        <enable>ON</enable>
       </rpu1>
       <rpu2>
-        <name>gp</name>
-        <runwaynum></runwaynum>
-        <enable></enable>
+        <name>GP-21R</name>
+        <runwaynum>1</runwaynum>
+        <enable>ON</enable>
       </rpu2>
       <rpu3>
-        <name>gp</name>
-        <runwaynum></runwaynum>
-        <enable></enable>
+        <name>DME-21R</name>
+        <runwaynum>1</runwaynum>
+        <enable>ON</enable>
       </rpu3>
       <rpu4>
-        <name>gp</name>
-        <runwaynum></runwaynum>
-        <enable></enable>
+        <name>LLZ-03L</name>
+        <runwaynum>2</runwaynum>
+        <enable>ON</enable>
       </rpu4>
       <rpu5>
-        <name>gp</name>
-        <runwaynum></runwaynum>
-        <enable></enable>
+        <name>GP-03L</name>
+        <runwaynum>2</runwaynum>
+        <enable>ON</enable>
       </rpu5>
       <rpu6>
-        <name>gp</name>
-        <runwaynum></runwaynum>
-        <enable></enable>
+        <name>DME-03L</name>
+        <runwaynum>2</runwaynum>
+        <enable>ON</enable>
       </rpu6>
       <rpu7>
-        <name>gp</name>
-        <runwaynum></runwaynum>
-        <enable></enable>
+        <name>DVOR</name>
+        <runwaynum>0</runwaynum>
+        <enable>ON</enable>
       </rpu7>
       <rpu8>
-        <name>gp</name>
-        <runwaynum></runwaynum>
-        <enable></enable>
+        <name>VDME</name>
+        <runwaynum>0</runwaynum>
+        <enable>ON</enable>
       </rpu8>
     </navaids>
   </airport>
