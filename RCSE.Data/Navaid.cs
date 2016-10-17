@@ -14,10 +14,6 @@ namespace RCSE.Data
             Normaml,
             Warning,
             Alarm,
-            Maintenance,
-            Maintenanceflash,
-            Datacom,
-            Datacomflash
         };
         public enum MaintType
         {
