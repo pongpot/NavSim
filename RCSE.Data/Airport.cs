@@ -8,8 +8,8 @@ namespace RCSE.Data
 {
     public class Airport
     {
-        public List<Runway> Runway;
-        public List<Navaid> Navaid;
+        public List<Runway> Runway { get; set; }
+        public List<Navaid> Navaid { get; set; }
         public Airport()
         {
             Runway = new List<Runway>();

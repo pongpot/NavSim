@@ -41,6 +41,8 @@ namespace RCSE.Simulator
             _RpuBox = rpubox;
             _Navaid = navaid;
 
+            rpubox.Text = rpubox.Text + " " + navaid.Name;
+
             if (_Navaid.Enable)
             {
                 rpubox.Enabled = true;

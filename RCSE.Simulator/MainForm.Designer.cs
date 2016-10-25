@@ -28,7 +28,12 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.runway1 = new System.Windows.Forms.GroupBox();
+            this.runwayStatus1 = new System.Windows.Forms.Panel();
+            this.runwayStatusOff1 = new System.Windows.Forms.RadioButton();
+            this.runwayStatusOn1 = new System.Windows.Forms.RadioButton();
+            this.runwayTextStatus1 = new System.Windows.Forms.Label();
             this.runwayCategory1 = new System.Windows.Forms.Panel();
             this.runwayCategoryAlarm1 = new System.Windows.Forms.RadioButton();
             this.runwayCategoryI1 = new System.Windows.Forms.RadioButton();
@@ -60,8 +65,7 @@
             this.datacomFlash1 = new System.Windows.Forms.RadioButton();
             this.datacomOff1 = new System.Windows.Forms.RadioButton();
             this.datacomOn1 = new System.Windows.Forms.RadioButton();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.buttonStart = new System.Windows.Forms.Button();
             this.pccontrol2 = new System.Windows.Forms.GroupBox();
             this.pccontrolStatusFlash2 = new System.Windows.Forms.RadioButton();
             this.pccontrolTextStatus2 = new System.Windows.Forms.Label();
@@ -210,11 +214,12 @@
             this.datacomFlash8 = new System.Windows.Forms.RadioButton();
             this.datacomOff8 = new System.Windows.Forms.RadioButton();
             this.datacomOn8 = new System.Windows.Forms.RadioButton();
-            this.runwayStatus1 = new System.Windows.Forms.Panel();
-            this.runwayStatusOff1 = new System.Windows.Forms.RadioButton();
-            this.runwayStatusOn1 = new System.Windows.Forms.RadioButton();
-            this.runwayTextStatus1 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
+            this.label2 = new System.Windows.Forms.Label();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.runway1.SuspendLayout();
+            this.runwayStatus1.SuspendLayout();
             this.runwayCategory1.SuspendLayout();
             this.runwayControl1.SuspendLayout();
             this.runwayBuzzer1.SuspendLayout();
@@ -265,7 +270,7 @@
             this.status8.SuspendLayout();
             this.buzzer8.SuspendLayout();
             this.datacom8.SuspendLayout();
-            this.runwayStatus1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
             this.SuspendLayout();
             // 
             // runway1
@@ -281,7 +286,51 @@
             this.runway1.Size = new System.Drawing.Size(1256, 285);
             this.runway1.TabIndex = 0;
             this.runway1.TabStop = false;
-            this.runway1.Text = "Runway 1";
+            this.runway1.Text = "Runway-1";
+            // 
+            // runwayStatus1
+            // 
+            this.runwayStatus1.Controls.Add(this.runwayStatusOff1);
+            this.runwayStatus1.Controls.Add(this.runwayStatusOn1);
+            this.runwayStatus1.Controls.Add(this.runwayTextStatus1);
+            this.runwayStatus1.Location = new System.Drawing.Point(9, 33);
+            this.runwayStatus1.Name = "runwayStatus1";
+            this.runwayStatus1.Size = new System.Drawing.Size(1094, 44);
+            this.runwayStatus1.TabIndex = 24;
+            // 
+            // runwayStatusOff1
+            // 
+            this.runwayStatusOff1.AutoSize = true;
+            this.runwayStatusOff1.Location = new System.Drawing.Point(266, 9);
+            this.runwayStatusOff1.Margin = new System.Windows.Forms.Padding(6);
+            this.runwayStatusOff1.Name = "runwayStatusOff1";
+            this.runwayStatusOff1.Size = new System.Drawing.Size(85, 29);
+            this.runwayStatusOff1.TabIndex = 1;
+            this.runwayStatusOff1.TabStop = true;
+            this.runwayStatusOff1.Text = "OFF";
+            this.runwayStatusOff1.UseVisualStyleBackColor = true;
+            // 
+            // runwayStatusOn1
+            // 
+            this.runwayStatusOn1.AutoSize = true;
+            this.runwayStatusOn1.Location = new System.Drawing.Point(117, 9);
+            this.runwayStatusOn1.Margin = new System.Windows.Forms.Padding(6);
+            this.runwayStatusOn1.Name = "runwayStatusOn1";
+            this.runwayStatusOn1.Size = new System.Drawing.Size(74, 29);
+            this.runwayStatusOn1.TabIndex = 0;
+            this.runwayStatusOn1.TabStop = true;
+            this.runwayStatusOn1.Text = "ON";
+            this.runwayStatusOn1.UseVisualStyleBackColor = true;
+            // 
+            // runwayTextStatus1
+            // 
+            this.runwayTextStatus1.AutoSize = true;
+            this.runwayTextStatus1.Location = new System.Drawing.Point(9, 11);
+            this.runwayTextStatus1.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            this.runwayTextStatus1.Name = "runwayTextStatus1";
+            this.runwayTextStatus1.Size = new System.Drawing.Size(73, 25);
+            this.runwayTextStatus1.TabIndex = 8;
+            this.runwayTextStatus1.Text = "Status";
             // 
             // runwayCategory1
             // 
@@ -452,7 +501,7 @@
             this.rpu1.Size = new System.Drawing.Size(305, 702);
             this.rpu1.TabIndex = 14;
             this.rpu1.TabStop = false;
-            this.rpu1.Text = "RPU 1";
+            this.rpu1.Text = "RPU-1";
             // 
             // maint1
             // 
@@ -646,25 +695,16 @@
             this.datacomOn1.Text = "Data COM ON";
             this.datacomOn1.UseVisualStyleBackColor = true;
             // 
-            // button1
+            // buttonStart
             // 
-            this.button1.Location = new System.Drawing.Point(1118, 1160);
-            this.button1.Margin = new System.Windows.Forms.Padding(6);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(150, 44);
-            this.button1.TabIndex = 21;
-            this.button1.Text = "Start";
-            this.button1.UseVisualStyleBackColor = true;
-            // 
-            // button2
-            // 
-            this.button2.Location = new System.Drawing.Point(1305, 1160);
-            this.button2.Margin = new System.Windows.Forms.Padding(6);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(150, 44);
-            this.button2.TabIndex = 22;
-            this.button2.Text = "Stop";
-            this.button2.UseVisualStyleBackColor = true;
+            this.buttonStart.Location = new System.Drawing.Point(2365, 1158);
+            this.buttonStart.Margin = new System.Windows.Forms.Padding(6);
+            this.buttonStart.Name = "buttonStart";
+            this.buttonStart.Size = new System.Drawing.Size(150, 45);
+            this.buttonStart.TabIndex = 21;
+            this.buttonStart.Text = "Start";
+            this.buttonStart.UseVisualStyleBackColor = true;
+            this.buttonStart.Click += new System.EventHandler(this.buttonStart_Click);
             // 
             // pccontrol2
             // 
@@ -740,7 +780,7 @@
             this.runway2.Size = new System.Drawing.Size(1256, 285);
             this.runway2.TabIndex = 15;
             this.runway2.TabStop = false;
-            this.runway2.Text = "Runway 2";
+            this.runway2.Text = "Runway-2";
             // 
             // runwayCategory2
             // 
@@ -1208,7 +1248,7 @@
             this.rpu2.Size = new System.Drawing.Size(305, 702);
             this.rpu2.TabIndex = 25;
             this.rpu2.TabStop = false;
-            this.rpu2.Text = "RPU 2";
+            this.rpu2.Text = "RPU-2";
             // 
             // rpu3
             // 
@@ -1223,7 +1263,7 @@
             this.rpu3.Size = new System.Drawing.Size(305, 702);
             this.rpu3.TabIndex = 26;
             this.rpu3.TabStop = false;
-            this.rpu3.Text = "RPU 3";
+            this.rpu3.Text = "RPU-3";
             // 
             // maint3
             // 
@@ -1430,7 +1470,7 @@
             this.rpu4.Size = new System.Drawing.Size(305, 702);
             this.rpu4.TabIndex = 27;
             this.rpu4.TabStop = false;
-            this.rpu4.Text = "RPU 4";
+            this.rpu4.Text = "RPU-4";
             // 
             // maint4
             // 
@@ -1637,7 +1677,7 @@
             this.rpu5.Size = new System.Drawing.Size(305, 702);
             this.rpu5.TabIndex = 28;
             this.rpu5.TabStop = false;
-            this.rpu5.Text = "RPU 5";
+            this.rpu5.Text = "RPU-5";
             // 
             // maint5
             // 
@@ -1844,7 +1884,7 @@
             this.rpu6.Size = new System.Drawing.Size(305, 702);
             this.rpu6.TabIndex = 26;
             this.rpu6.TabStop = false;
-            this.rpu6.Text = "RPU 6";
+            this.rpu6.Text = "RPU-6";
             // 
             // maint6
             // 
@@ -2051,7 +2091,7 @@
             this.rpu7.Size = new System.Drawing.Size(305, 702);
             this.rpu7.TabIndex = 26;
             this.rpu7.TabStop = false;
-            this.rpu7.Text = "RPU 7";
+            this.rpu7.Text = "RPU-7";
             // 
             // maint7
             // 
@@ -2258,7 +2298,7 @@
             this.rpu8.Size = new System.Drawing.Size(305, 702);
             this.rpu8.TabIndex = 26;
             this.rpu8.TabStop = false;
-            this.rpu8.Text = "RPU 8";
+            this.rpu8.Text = "RPU-8";
             // 
             // maint8
             // 
@@ -2452,49 +2492,44 @@
             this.datacomOn8.Text = "Data COM ON";
             this.datacomOn8.UseVisualStyleBackColor = true;
             // 
-            // runwayStatus1
+            // label1
             // 
-            this.runwayStatus1.Controls.Add(this.runwayStatusOff1);
-            this.runwayStatus1.Controls.Add(this.runwayStatusOn1);
-            this.runwayStatus1.Controls.Add(this.runwayTextStatus1);
-            this.runwayStatus1.Location = new System.Drawing.Point(9, 33);
-            this.runwayStatus1.Name = "runwayStatus1";
-            this.runwayStatus1.Size = new System.Drawing.Size(1094, 44);
-            this.runwayStatus1.TabIndex = 24;
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(2028, 1169);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(65, 25);
+            this.label1.TabIndex = 30;
+            this.label1.Text = "Time:";
             // 
-            // runwayStatusOff1
+            // numericUpDown1
             // 
-            this.runwayStatusOff1.AutoSize = true;
-            this.runwayStatusOff1.Location = new System.Drawing.Point(266, 9);
-            this.runwayStatusOff1.Margin = new System.Windows.Forms.Padding(6);
-            this.runwayStatusOff1.Name = "runwayStatusOff1";
-            this.runwayStatusOff1.Size = new System.Drawing.Size(85, 29);
-            this.runwayStatusOff1.TabIndex = 1;
-            this.runwayStatusOff1.TabStop = true;
-            this.runwayStatusOff1.Text = "OFF";
-            this.runwayStatusOff1.UseVisualStyleBackColor = true;
+            this.numericUpDown1.Location = new System.Drawing.Point(2099, 1167);
+            this.numericUpDown1.Maximum = new decimal(new int[] {
+            3600,
+            0,
+            0,
+            0});
+            this.numericUpDown1.Name = "numericUpDown1";
+            this.numericUpDown1.Size = new System.Drawing.Size(120, 31);
+            this.numericUpDown1.TabIndex = 31;
+            this.numericUpDown1.Value = new decimal(new int[] {
+            60,
+            0,
+            0,
+            0});
             // 
-            // runwayStatusOn1
+            // label2
             // 
-            this.runwayStatusOn1.AutoSize = true;
-            this.runwayStatusOn1.Location = new System.Drawing.Point(117, 9);
-            this.runwayStatusOn1.Margin = new System.Windows.Forms.Padding(6);
-            this.runwayStatusOn1.Name = "runwayStatusOn1";
-            this.runwayStatusOn1.Size = new System.Drawing.Size(74, 29);
-            this.runwayStatusOn1.TabIndex = 0;
-            this.runwayStatusOn1.TabStop = true;
-            this.runwayStatusOn1.Text = "ON";
-            this.runwayStatusOn1.UseVisualStyleBackColor = true;
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(2225, 1169);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(93, 25);
+            this.label2.TabIndex = 32;
+            this.label2.Text = "seconds";
             // 
-            // runwayTextStatus1
+            // timer1
             // 
-            this.runwayTextStatus1.AutoSize = true;
-            this.runwayTextStatus1.Location = new System.Drawing.Point(9, 11);
-            this.runwayTextStatus1.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
-            this.runwayTextStatus1.Name = "runwayTextStatus1";
-            this.runwayTextStatus1.Size = new System.Drawing.Size(73, 25);
-            this.runwayTextStatus1.TabIndex = 8;
-            this.runwayTextStatus1.Text = "Status";
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
             // MainForm
             // 
@@ -2502,6 +2537,9 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
             this.ClientSize = new System.Drawing.Size(2574, 1229);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.numericUpDown1);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.rpu8);
             this.Controls.Add(this.rpu7);
             this.Controls.Add(this.rpu6);
@@ -2511,8 +2549,7 @@
             this.Controls.Add(this.rpu2);
             this.Controls.Add(this.pccontrol2);
             this.Controls.Add(this.runway2);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.buttonStart);
             this.Controls.Add(this.rpu1);
             this.Controls.Add(this.pccontrol1);
             this.Controls.Add(this.runway1);
@@ -2523,6 +2560,8 @@
             this.Text = "Enable";
             this.Load += new System.EventHandler(this.MainForm_Load);
             this.runway1.ResumeLayout(false);
+            this.runwayStatus1.ResumeLayout(false);
+            this.runwayStatus1.PerformLayout();
             this.runwayCategory1.ResumeLayout(false);
             this.runwayCategory1.PerformLayout();
             this.runwayControl1.ResumeLayout(false);
@@ -2614,17 +2653,16 @@
             this.buzzer8.PerformLayout();
             this.datacom8.ResumeLayout(false);
             this.datacom8.PerformLayout();
-            this.runwayStatus1.ResumeLayout(false);
-            this.runwayStatus1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
         #endregion
         private System.Windows.Forms.GroupBox rpu1;
         private System.Windows.Forms.RadioButton buzzerEnable1;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button buttonStart;
         private System.Windows.Forms.GroupBox runway1;
         private System.Windows.Forms.GroupBox buzzer1;
         private System.Windows.Forms.RadioButton buzzerDisable1;
@@ -2807,6 +2845,10 @@
         private System.Windows.Forms.RadioButton runwayStatusOff1;
         private System.Windows.Forms.RadioButton runwayStatusOn1;
         private System.Windows.Forms.Label runwayTextStatus1;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.NumericUpDown numericUpDown1;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Timer timer1;
     }
 }
 

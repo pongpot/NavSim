@@ -18,7 +18,7 @@ namespace RCSE.Simulator
         private GroupBox _RwyBox;
         private Runway _Runway;
 
-        public void RpuGetStatus()
+        public void RwyGetStatus()
         {
             _Runway.Buzzer = _RwyBuzzer.GetValue();
             _Runway.Category = _RwyCat.GetValue();
@@ -26,7 +26,7 @@ namespace RCSE.Simulator
             _Runway.RwyControl = _RwyControl.GetValue();
             _Runway.Status = _RwyStatus.GetValue();
         }
-        public void RpuSetStatus()
+        public void RwySetStatus()
         {
             _RwyBuzzer.SetValue(_Runway.Buzzer);
             _RwyCat.SetValue(_Runway.Category);
@@ -35,15 +35,17 @@ namespace RCSE.Simulator
             _RwyStatus.SetValue(_Runway.Status);
         }
 
-        public RwyBinding(RwyBuzzer rwybuzzer, RwyCat rwycat, RwyPcControl rwypccontrol, RwyControl rwycontrol, RwyStatus rwystatus, Runway runway, GroupBox rwybox)
+        public RwyBinding(RwyBuzzer rwybuzzer, RwyCat rwycat, RwyPcControl rwypccontrol, RwyControl rwycontrol, RwyStatus rwystatus, GroupBox rwybox, Runway runway)
         {
             _RwyBuzzer = rwybuzzer;
             _RwyCat = rwycat;
             _RwyPcControl = rwypccontrol;
             _RwyControl = rwycontrol;
             _RwyStatus = rwystatus;
-            _Runway = runway;
             _RwyBox = rwybox;
+            _Runway = runway;
+
+            rwybox.Text = rwybox.Text + " " + runway.Name;
 
             if (_Runway.Enable)
             {
