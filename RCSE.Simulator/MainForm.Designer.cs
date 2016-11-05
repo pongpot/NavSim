@@ -2557,7 +2557,7 @@
             this.MaximumSize = new System.Drawing.Size(2600, 1300);
             this.Name = "MainForm";
             this.Padding = new System.Windows.Forms.Padding(20);
-            this.Text = "Enable";
+            this.Text = "THALES RCSU SIMULATION";
             this.Load += new System.EventHandler(this.MainForm_Load);
             this.runway1.ResumeLayout(false);
             this.runwayStatus1.ResumeLayout(false);

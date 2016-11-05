@@ -7,56 +7,56 @@
   <airport>
     <runway>
       <rny1>
-        <name>01-L</name>
+        <name>01-R</name>
         <category>2</category>
         <enable>ON</enable>
       </rny1>
       <rny2>
-        <name>19-R</name>
+        <name>19-L</name>
         <category>2</category>
         <enable>ON</enable>
       </rny2>
     </runway>
     <navaids>
       <rpu1>
-        <name>LLZ-01L</name>
+        <name>LLZ-01R</name>
         <runwaynum>1</runwaynum>
         <enable>ON</enable>
       </rpu1>
       <rpu2>
-        <name>GP-01L</name>
+        <name>GP-01R</name>
         <runwaynum>1</runwaynum>
         <enable>ON</enable>
       </rpu2>
       <rpu3>
-        <name>DME-01L</name>
+        <name>DME-01R</name>
         <runwaynum>1</runwaynum>
         <enable>ON</enable>
       </rpu3>
       <rpu4>
-        <name>LLZ-19R</name>
-        <runwaynum>2</runwaynum>
-        <enable>ON</enable>
+        <name></name>
+        <runwaynum></runwaynum>
+        <enable>OFF</enable>
       </rpu4>
       <rpu5>
-        <name>GP-19R</name>
+        <name>LLZ-19L</name>
         <runwaynum>2</runwaynum>
         <enable>ON</enable>
       </rpu5>
       <rpu6>
-        <name>DME-19R</name>
+        <name>GP-19L</name>
         <runwaynum>2</runwaynum>
         <enable>ON</enable>
       </rpu6>
       <rpu7>
-        <name>DVOR</name>
+        <name>DME-19L</name>
         <runwaynum>2</runwaynum>
         <enable>ON</enable>
       </rpu7>
       <rpu8>
-        <name>VDME</name>
-        <runwaynum>2</runwaynum>
-        <enable>ON</enable>
+        <name></name>
+        <runwaynum></runwaynum>
+        <enable>OFF</enable>
       </rpu8>
     </navaids>
   </airport>

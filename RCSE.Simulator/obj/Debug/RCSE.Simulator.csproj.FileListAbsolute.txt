@@ -19,3 +19,8 @@ C:\Users\pongpot\Source\Repos\NavSim\RCSE.Simulator\obj\Debug\RCSE.Simulator.csp
 C:\Users\pongpot\Source\Repos\NavSim\RCSE.Simulator\bin\Debug\Conf\site.xml
 C:\Users\pongpot\Source\Repos\NavSim\RCSE.Simulator\bin\Debug\RCSE.Data.dll
 C:\Users\pongpot\Source\Repos\NavSim\RCSE.Simulator\bin\Debug\RCSE.Data.pdb
+C:\Users\pongpot\Source\Repos\NavSim\RCSE.Simulator\bin\Debug\MSDIS.Transmitters.dll
+C:\Users\pongpot\Source\Repos\NavSim\RCSE.Simulator\bin\Debug\RCSE.Thales.dll
+C:\Users\pongpot\Source\Repos\NavSim\RCSE.Simulator\bin\Debug\RCSE.Thales.pdb
+C:\Users\pongpot\Source\Repos\NavSim\RCSE.Simulator\bin\Debug\Conf\VTBB1-IP-128.xml
+C:\Users\pongpot\Source\Repos\NavSim\RCSE.Simulator\bin\Debug\Conf\VTBB2-IP-129.xml

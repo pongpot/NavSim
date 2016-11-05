@@ -7,7 +7,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using MSDIS.Transmitters;
 using RCSE.Data;
+using RCSE.Thales;
 
 namespace RCSE.Simulator
 {
@@ -138,13 +140,24 @@ namespace RCSE.Simulator
 
             Program.airportBinding._RpuBinding.Add(rpubinding8);
         }
+        public byte datacount = 0;
         private void timer1_Tick(object sender, EventArgs e)
         {
             //MessageBox.Show("Time is up!!!");
             Program.airportBinding.AptGetData();
-            Program.airportBinding.AptGetData();
-            debugRunway(1);
-            debugRpu(0);
+
+            Encode Test = new Encode();
+            byte[] data = Test.EncodeData(Program.airportConfig, datacount++);
+            BcastTransmitter bTx = new BcastTransmitter(
+                "TX01", Program.globalConfig.Tx.RemoteIP, Convert.ToInt32(Program.globalConfig.Tx.RemotePort));
+
+            bTx.Transmit(data);
+
+            //Console.WriteLine("data test {0}", BitConverter.ToString(data));
+            Console.WriteLine("data test == {0}", Test.CheckRPUEnable(Program.airportConfig));
+
+            //debugRunway(0);
+            //debugRpu(0);
         }
         private void debugRunway (int num)
         {

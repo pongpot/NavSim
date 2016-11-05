@@ -33,6 +33,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="MSDIS.Transmitters">
+      <HintPath>..\Lib\MSDIS.Transmitters.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -84,8 +87,17 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Conf\VTBB2-IP-129.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Conf\VTBB1-IP-128.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <Content Include="Conf\site.xml">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
     </Content>
   </ItemGroup>
   <ItemGroup>
@@ -93,6 +105,13 @@
       <Project>{df6712f4-88e4-4238-b7d0-1234363083e0}</Project>
       <Name>RCSE.Data</Name>
     </ProjectReference>
+    <ProjectReference Include="..\RCSE.Thales\RCSE.Thales.csproj">
+      <Project>{41b502ad-80a3-430f-9d44-2d3b12c92589}</Project>
+      <Name>RCSE.Thales</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
